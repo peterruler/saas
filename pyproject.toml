@@ -1,0 +1,14 @@
+[project]
+name = "saas-api"
+version = "0.1.0"
+description = "Python API dependencies for the saas project"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "openai",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
