@@ -5,6 +5,7 @@ description = "Python API dependencies for the saas project"
 requires-python = ">=3.11"
 dependencies = [
     "fastapi",
+    "fastapi-clerk-auth",
     "uvicorn",
     "openai",
 ]
