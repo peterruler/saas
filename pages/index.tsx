@@ -10,7 +10,7 @@ export default function Home() {
         {/* Navigation */}
         <nav className="flex justify-between items-center mb-12">
           <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
-            IdeaGen
+            IdeaGen Pro
           </h1>
           <div>
             <SignedOut>
@@ -28,7 +28,7 @@ export default function Home() {
                 >
                   Go to App
                 </Link>
-                <UserButton afterSignOutUrl="/" />
+                <UserButton showName={true} />
               </div>
             </SignedIn>
           </div>
@@ -41,21 +41,32 @@ export default function Home() {
             <br />
             Big Business Idea
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
             Harness the power of AI to discover innovative business opportunities tailored for the AI agent economy
           </p>
+          
+          {/* Pricing Preview */}
+          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-xl p-6 max-w-sm mx-auto mb-8">
+            <h3 className="text-2xl font-bold mb-2">Premium Subscription</h3>
+            <p className="text-4xl font-bold text-blue-600 mb-2">$10<span className="text-lg text-gray-600">/month</span></p>
+            <ul className="text-left text-gray-600 dark:text-gray-400 mb-6">
+              <li className="mb-2">✓ Unlimited idea generation</li>
+              <li className="mb-2">✓ Advanced AI models</li>
+              <li className="mb-2">✓ Priority support</li>
+            </ul>
+          </div>
           
           <SignedOut>
             <SignInButton mode="modal">
               <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all transform hover:scale-105">
-                Get Started Free
+                Start Your Free Trial
               </button>
             </SignInButton>
           </SignedOut>
           <SignedIn>
             <Link href="/product">
               <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all transform hover:scale-105">
-                Generate Ideas Now
+                Access Premium Features
               </button>
             </Link>
           </SignedIn>
