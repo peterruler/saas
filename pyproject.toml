@@ -8,6 +8,7 @@ dependencies = [
     "fastapi-clerk-auth",
     "uvicorn",
     "openai",
+    "pydantic",
 ]
 
 [build-system]
